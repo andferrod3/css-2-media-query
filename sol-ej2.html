@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media query - Teléfono</title>
+  <style>
+    #telefono{
+      font-size: 32px;
+      font-weight: bold;
+      position: fixed;
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+      #telefono{
+        bottom: 10px;
+        width: 30%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      #telefono{
+        top: 10px;
+        left: initial;
+        bottom: initial;
+        right: 10px;
+        color: green;
+      }
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    }
+  </style>
+</head>
+<body>
+  <div id="telefono">987 65 43 21</div>
+</body>
+</html>
